@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to right,#020621 50%,#000000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #ffffffd0;
+}
+.countener{
+    width: 96%;
+    height: 90%;
+    background-image: 
+    linear-gradient(to right,#020621  ,#000000a9),
+    url(Ahmed.jpg);
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+}
+.countener:hover{
+    background-image: 
+    linear-gradient(to right,#020621  ,#0000001e),
+    url(Ahmed.jpg);
+}
+header{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+li{
+    padding: 8px;
+    border-bottom: 2px solid transparent;
+}
+li:hover{
+    border-bottom: 2px solid #003cffe1;
+}
+.content{
+    color: aliceblue;
+    width: 50%;
+    margin-top: 200px;
+    padding: 30px;
+}
+.content h2{
+    font-size: 110px;
+    text-transform: uppercase;
+}
+.content p{
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    width: 400px;
+}
+.content button{
+    color: black;
+    font-size: 20px;
+    margin: 15px 0px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.content button:hover{
+    cursor: pointer;
+    color: rgb(228, 234, 255);
+    background: transparent;
+}
+@media (min-width:300px) and (max-width:600px){
+    .content p{
+        width: 190%;
+        margin: 10px 10px 10px -10px;
+        padding: 0px;
+    }
+    .content h2{
+        margin: 10px 10px 10px -10px;
+        font-size: 520%;
+    }
+    .content button{
+        margin: 10px 10px 10px -10px;
+    }
+    ul{
+        width: 80%;
+        font-size: 14px;
+    }
+}
+@media (min-height:300px) and (max-height:800px){
+    .content{
+        margin-top: 90px;
+    }
+}
